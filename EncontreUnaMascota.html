@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscribir Mascota</title>
+    <link rel="stylesheet" href="Header_Y_Footers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formularios.css">
+    <link rel="stylesheet" href="EncontreUnaMascota.css">
+</head>
+
+<body>
+    <header>
+        <div><img src="Recursos\Logo ps ajustado.png" alt="logo" class="Header_Logo"></div>
+        <div> <h1><a href="Index.html">Siguiendo Huellas</a><a href="Index.html"><img src="recursos/patitas-camino.gif" alt="" class="Header_Logo" id="GifPatitas"></a></h1>   </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="RegistrarRefugio.html">Registrar Refugio</a></li>
+                    <li><a href="PerdiMiMascota.html">Perdí mi mascota</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div>
+        <h1>Inscripción de mascota encontrada</h1>
+        <p class="Descripcion_Pagina">En éste formulario, usted podrá inscribir una mascota que halla encontrado. Tenga en cuenta que las personas que soliciten contactarse podrán ver su número de teléfono para contactarse con usted.</p>
+        <form action="" method="POST" enctype="text/plain">
+            <fieldset>
+                <legend>Información de Contacto.</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text"name="Nombre">
+                <label for="Apellido">Apellido:</label>
+                <input type="text"name="Apellido">
+                <br>
+                <br>
+                <label for="Numero_De_Contacto">Número de telefono:</label>
+                <input type="text"name="Numero_De_Contacto">
+            </fieldset>
+            <fieldset>
+                <legend>Información de la mascota</legend>
+                <label for="Zona_Encontrado">Zona en la que lo encontró: </label>
+                <input type="text"name="UbicacionDelRefugio">
+                <br>
+                <label for="color_animal">Color del Animal:</label>
+                <input type="text"name="color_animal">
+                <br>
+                <label for="archivos_encontrada">Cargue aquí fotos y/o videos del animal que encontró </label>
+                <input type="submit" name="archivos_encontrada" id="" value="Cargar Archivos">
+                <br>
+                <textarea name="DatosExtraMascEncontr" id="" cols="60" rows="10" placeholder="Datos que crea relevantes"></textarea>
+            </fieldset>
+            <input type="submit" value="Insciribir mascota" class="Submit_Button">
+        </form>
+    </div>
+
+    <aside>
+        <div class="mascotas_perdidas">
+        <h2>Mascotas perdidas</h2>
+        <form action="">
+            <label for="filtros">Filtrar:</label>
+            <select name="Filtros">
+                <option value="Razas">Por Raza</option>
+                <option value="Ubicacion">Por Ubicación</option>
+            </select>
+        </form>
+        <article>
+            <img src="recursos/_107435681_perro1.jpg" alt="Foto de animal perdido" class="Foto_Mascota" style="width: 40%; height: 40%;">
+            <p>Nombre del animal</p>
+            <p>Descripción de la mascota:</p>
+            <p>Zona donde se perdió:</p>
+        </article>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7804.817079831111!2d-58.72325486997277!3d-34.666789142156695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1628281277639!5m2!1ses-419!2sar" width="40%" height="30%" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
+        </div>
+        <input type="submit" value="Contactar!" class="Div_Contactar">
+    </aside>
+
+    <footer>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="Contacto-SH.html">Contacto</a></li>
+                <li><a href="FAQ-SH.html">FAQ</a></li>
+                <li><a href="PoliticasDelSitio-SH.html">Políticas del sitio</a></li>
+                <li><a href="TerminosYCondiciones-SH.html">Términos y condiciones</a></li>
+                <li><a href="Contribuir-Donar.html">Contribuir</a></li>
+                <li><a target="_blank" href="https://www.facebook.com"><img src="Recursos/facebook logo.png" alt="Boton para Facebook" class="Redes_Sociales"></a></li>
+                <li><a target="_blank" href="https://www.tiktok.com/es"><img src="Recursos/logo tiktok2.png" alt="Boton para Tik Tok" class="Redes_Sociales"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/lautygazzo/"><img src="recursos/IgLogo.png" alt="Boton para instagram" class="Redes_Sociales"></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Refugio</title>
+    <link rel="stylesheet" href="Header_Y_Footers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formularios.css">
+    <link rel="stylesheet" href="RegistrarRefugio.css">
+</head>
+
+<body>
+    <header>
+        <div><img src="Recursos\Logo ps ajustado.png" alt="logo" class="Header_Logo"></div>
+        <h1><a href="Index.html">Siguiendo Huellas</a><a href="Index.html"><img src="recursos/patitas-camino.gif" alt="" class="Header_Logo" id="GifPatitas"></a></h1>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="EncontreUnaMascota.html">Encontré una mascota</a></li>
+                    <li><a href="PerdiMiMascota.html">Perdí mi mascota</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article>
+        <h1> Formulario de Registro de Refugio</h1>
+        <p class="Descripcion_Pagina">En éste formulario, usted podrá registrar un refugio para que la gente que encuentre animales en estados críticos puedan llevarlos a su refugio ya sea para darles traslado, buscar un adoptante o curarlos hasta que estén bien y habiten el refugio.</p>
+        <form action="" method="POST" enctype="text/plain">
+            <fieldset>
+                <legend>Información de Contacto.</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text"name="Nombre">
+                <label for="Apellido">Apellido:</label>
+                <input type="text"name="Apellido">
+                <br>
+                <label for="Numero_De_Contacto">Número de telefono:</label>
+                <input type="text"name="Numero_De_Contacto">
+            </fieldset>
+            <fieldset>
+                <legend>Información del Refugio.</legend>
+                <label for="UbicacionDelRefugio">Calle y Altura del Refugio</label>
+                <input type="text"name="UbicacionDelRefugio">
+                <div>Tamaño de los animales que admite (Puede seleccionar mas de uno):
+                <label for="Pequenios">Pequeños</label>
+                <input type="checkbox" name="Pequenios" value="1">
+                <label for="Medianos">| Medianos</label>
+                <input type="checkbox" name="Medianos" value="1">
+                <label for="Grandes">| Grandes</label>
+                <input type="checkbox" name="Grandes" value="1">
+                </div>
+                <label for="Numero_De_Contacto_Refugio">Número de telefono del Refugio:</label>
+                <input type="text"name="Numero_De_Contacto_Refugio">
+                <br>
+                <br>
+                <textarea name="Detalles_Adicionales_Refugio" maxlength="500" id="" cols="50" rows="10" placeholder="Escriba aquí cualquier aclaración o información adicional sobre su refugio:"></textarea>
+                <p>Escriba brevemente la historia de su refugio, dando una breve descripción de lo que hacen, como operan, etc.</p>
+                <textarea name="Historia_Refugio" id="" cols="50" rows="10"></textarea>
+            </fieldset>
+            <input type="submit" value="Registrar" class="Submit_Button">
+        </form>
+    </article>
+
+    <aside>
+        <h2>Refugios que Confían en Nosotros</h2>
+            <p>Refugio San Alberto</p>
+            <img src="recursos/Refugio-perros-vacío.jpg" alt="Foto del refugio" class="Aside_Imagen">
+            <p>Historia del refugio:</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quia, quibusdam at minima sunt quas doloribus dolores quam minus excepturi adipisci optio molestias impedit laudantium molestiae libero! Doloribus, nam sequi!</span>
+            <p>Zona en la que opera:</p>
+            <span>Lorem ipsum </span>
+            <p>Contacto:</p>
+            <span>Lorem ipsum dolor </span>
+            <p>Información adicional:</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptate itaque tempore perspiciatis pariatur reprehenderit quam a quaerat repellendus, culpa dignissimos iste suscipit, veritatis voluptatibus qui harum, ullam laboriosam minima.</span>
+    </aside>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="Contacto-SH.html">Contacto</a></li>
+                <li><a href="FAQ-SH.html">FAQ</a></li>
+                <li><a href="PoliticasDelSitio-SH.html">Políticas del sitio</a></li>
+                <li><a href="TerminosYCondiciones-SH.html">Términos y condiciones</a></li>
+                <li><a href="Contribuir-Donar.html">Contribuir</a></li>
+                <li><a target="_blank" href="https://www.facebook.com"><img src="Recursos/facebook logo.png" alt="Boton para Facebook" class="Redes_Sociales"></a></li>
+                <li><a target="_blank" href="https://www.tiktok.com/es"><img src="Recursos/logo tiktok2.png" alt="Boton para Tik Tok" class="Redes_Sociales"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/lautygazzo/"><img src="recursos/IgLogo.png" alt="Boton para instagram" class="Redes_Sociales"></a></li>
+                <!-- Las Redes sociales puestas son de referencia, al terminar el proyecto armaré las páginas correspondientes  -->
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
