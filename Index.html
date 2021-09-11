@@ -5,99 +5,132 @@
     <title> Siguiendo Huellas</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="BtStp/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-orange">
+<body class="bg-beige">
     <header class="row container align-items-start">
-        <img src="Recursos\Logo ps ajustado.png" alt="logo" class=" col-xs-none col-sm-1 col-md-1">
-        <h1 class="col-md-5 col-sm-5"><a href="Index.html">Siguiendo Huellas</a> <a href="Index.html"><img src="recursos/patitas-camino.gif" alt="" class="col-xs-none col-md-1" id="GifPatitas"></a> </h1>
-        <nav class="col-md">
-            <ul class="nav nav-tabs justify-content-end">
-                <li class="nav-item"><a class="nav-link" href="RegistrarRefugio.html">Registrar Refugio</a></li>
-                <li class="nav-item"><a class="nav-link" href="EncontreUnaMascota.html">Encontré una mascota</a></li>
-                <li class="nav-item"><a class="nav-link" href="PerdiMiMascota.html">Perdí mi mascota</a></li>
+        <img src="Recursos\Logo ps ajustado.png" alt="logo" class="flex-nowrap col-xs-none col-sm-1 col-md-2 col-lg-1">
+        <h1 class="text-nowrap col-md-5 col-sm-5 col-lg-5" style="font-family: 'Style Script', cursive; font-size: 350%;"><a href="Index.html">Siguiendo Huellas</a> <a href="Index.html"><img src="recursos/patitas-camino.gif" alt="" class="flex-nowrap col-xs-none col-sm-1 col-md col-lg-1 col" id="GifPatitas"></a> </h1>
+        <nav class="flex-nowrap col-md">
+            <ul class="nav nav-tabs flex-nowrap justify-content-between">
+                <li class="nav-item"><a class="nav-link text-center" href="RegistrarRefugio.html">Registrar Refugio</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="EncontreUnaMascota.html">Encontré una mascota</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="PerdiMiMascota.html">Perdí mi mascota</a></li>
             </ul>
         </nav>
     </header>
     
+    <section class="row">
+        
+        <!-- Mascotas Perdidas -->
+        <div class="col-sm-12 col-md-8 col-lg-5 col-xl-4 border border-2 border-primary">
+            <h2>Mascotas perdidas</h2>
+            <form action="" class="">
+                <label for="filtros">Filtrar:</label>
+                <select name="Filtros">
+                    <option value="Razas">Por Raza</option>
+                    <option value="Ubicacion">Por Ubicación</option>
+                </select>
+            </form>
+            <article>
+                <img src="recursos/_107435681_perro1.jpg" alt="Foto de animal perdido" class="img-fluid img-thumbnail" style="height: 20vh;">
+                <p>Nombre del animal: </p>
+                <p>Descripción de la mascota:</p>
+                <p class="div_article_textomapa">Zona donde se perdió:</p>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7804.817079831111!2d-58.72325486997277!3d-34.666789142156695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1628281277639!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" class="mapa img-fluid img-thumbnail"> </iframe>
+            <br><br>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Contactar" aria-expanded="false" aria-controls="Contactar">Contactar</button>
+            <div style="min-height: 10px;">
+                <div class="collapse collapse-horizontal" id="Contactar">
+                    <div class="card card-body" style="width: 25rem;">
+                    Recuerde que ponerse en contacto es una responsabilidad. Si usted está segur@ de que se quiere poner en contacto, presione el botono de abajo. 
+                    <input type="submit" value="Contactar!" class="btn btn-outline-success">
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Fin Mascotas Perdidas -->
 
-    <div class="mascotas_perdidas">
-        <h2>Mascotas perdidas</h2>
-        <form action="" class="filtros">
-            <label for="filtros">Filtrar:</label>
-            <select name="Filtros">
-                <option value="Razas">Por Raza</option>
-                <option value="Ubicacion">Por Ubicación</option>
-            </select>
-        </form>
-        <article>
-            <img src="recursos/_107435681_perro1.jpg" alt="Foto de animal perdido" class="FotosMascotas">
-            <p>Nombre del animal: </p>
-            <p>Descripción de la mascota:</p>
-            <p class="div_article_textomapa">Zona donde se perdió:</p>
-        </article>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7804.817079831111!2d-58.72325486997277!3d-34.666789142156695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1628281277639!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" class="div_article_mapa"> </iframe>
-        <input type="submit" value="Contactar!" class="Div_Contactar">
-    </div>
-    
-    <div class="mascotas_encontradas">
-        <h2>Mascotas encontradas</h2>
-        <form action="" class="filtros">
-            <label for="filtros">Filtrar:</label>
-            <select name="Filtros">
-                <option value="Razas">Por Raza</option>
-                <option value="Ubicacion">Por Ubicación</option>
-            </select>
-        </form>
-
-        <article>
-            <img src="Recursos/gatito.jpg" alt="Foto de animal perdido" class="FotosMascotas">
-            <p>Descripción de la mascota:</p> 
-            <p>Contacto:</p>
-            <p class="div_article_textomapa">Zona donde se encontró:</p>   
-        </Article>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5521.020932142176!2d-58.62831291394147!3d-34.634021924706666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1628281364436!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" class="div_article_mapa"></iframe>
-        <input type="submit" value="Contactar!" class="Div_Contactar">
-    </div>
+        <!-- Mascotas Encontradas -->
+        <div class="col-sm-12 col-md-8 col-lg-5 col-xl-4 border border-2 border-primary me-auto align-items-center">
+            <h2>Mascotas encontradas</h2>
+            <form action="" class="">
+                <label for="filtros">Filtrar:</label>
+                <select name="Filtros">
+                    <option value="Razas">Por Raza</option>
+                    <option value="Ubicacion">Por Ubicación</option>
+                </select>
+            </form>
+            <article>
+                <img src="Recursos/gatito.jpg" alt="Foto de animal encontrado" class="img-fluid img-thumbnail" style="height: 20vh;">
+                <p>Descripción de la mascota:</p>
+                <p>Contacto:</p>
+                <p class="div_article_textomapa">Zona donde se encontró:</p>
+            </Article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5521.020932142176!2d-58.62831291394147!3d-34.634021924706666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1628281364436!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" class="mapa img-fluid img-thumbnail"></iframe>
+            <br><br>
+            <button class="btn btn-primary ml-2" type="button" data-bs-toggle="collapse" data-bs-target="#Contactar2" aria-expanded="false" aria-controls="Contactar2">Contactar</button>
+            <div style="min-height: 10px;">
+                <div class="collapse collapse-horizontal" id="Contactar2">
+                    <div class="card card-body" style="width: 25rem;">
+                    Recuerde que ponerse en contacto es una responsabilidad. Si usted está segur@ de que se quiere poner en contacto, presione el botono de abajo.
+                    <input type="submit" value="Contactar!" class="btn btn-outline-success">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Mascotas Encontradas -->
 
 
-    <Aside>
-        <h3>Contactos importantes</h3>
-        <article>
-            <p>Perrera en su zona:</p>
-            <p>Denuncias por maltrato</p>
-            <p>Emergencias</p>
-        </article>
-        <form action="" method="POST" class="aside_usuario">
-            <p class="Usuario_Contrasenia">Datos de usuario</p>
-            <label for="usuario"></label>
-            <input type="text" name="usuario" placeholder="Nombre de Usuario">
-            <label for="contrasenia"></label>
-            <br>
-            <input type="Password" name="contrasenia" placeholder="Contraseña">
-            <br>
-            <input type="submit" value="Iniciar Sesión">
-            <br>
-            <a href="Registro-SH.html">Registrarse</a>
-        </form>
-    </Aside>
+
+
+        <Aside class="col-sm-10 col-lg-4 col-xl-3 text-center border border-1 border-secondary ms-sm-5" style="max-height: 500px;">
+            <h3>Contactos importantes</h3>
+            <article>
+                <p>Perrera en su zona:</p>
+                <p>Denuncias por maltrato</p>
+                <p>Emergencias</p>
+            </article>
+            <form class="row h-50" action="" method="POST">
+                <div class="align-self-end">
+                    <p class="Usuario_Contrasenia"><h2>Datos de usuario</h2></p>
+                    <label for="usuario"></label>
+                    <input type="text" name="usuario" placeholder="Nombre de Usuario" class="mb-2">
+                    <br>
+                    <label for="contrasenia"></label>
+                    <input type="Password" name="contrasenia" placeholder="Contraseña">
+                    <br><br>
+                    <input type="submit" value="Iniciar Sesión" class="btn btn-outline-success">
+                    <br>
+                    <a href="Registro-SH.html">Registrarse</a>
+                </div>
+            </form>
+        </Aside>
+
+    </section>
 
 
     <footer>
         <hr>
         <nav>
-            <ul>
-                <li><a href="Contacto-SH.html">Contacto</a></li>
-                <li><a href="FAQ-SH.html">FAQ</a></li>
-                <li><a href="PoliticasDelSitio-SH.html">Políticas del sitio</a></li>
-                <li><a href="TerminosYCondiciones-SH.html">Términos y condiciones</a></li>
-                <li><a href="Contribuir-Donar.html">Contribuir</a></li>
-                <li><a target="_blank" href="https://www.instagram.com/lautygazzo/"><img src="recursos/IgLogo.png" alt="Boton para instagram" class="Redes_Sociales"></a></li>
-                <li><a target="_blank" href="https://www.facebook.com"><img src="Recursos/facebook logo.png" alt="Boton para Facebook" class="Redes_Sociales"></a></li>
-                <li><a target="_blank" href="https://www.tiktok.com/es"><img src="Recursos/logo tiktok2.png" alt="Boton para Tik Tok" class="Redes_Sociales"></a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="FAQ-SH.html">FAQ</a></li>
+                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="Contacto-SH.html">Contacto</a></li>
+                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="PoliticasDelSitio-SH.html">Políticas del sitio</a></li>
+                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="TerminosYCondiciones-SH.html">Términos y condiciones</a></li>
+                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="Contribuir-Donar.html">Contribuir</a></li>
+                <li class="nav_item me-4 align-middle"><a target="_blank" href="https://www.instagram.com/lautygazzo/"><img src="recursos/IgLogo.png" alt="Boton para instagram" ></a></li>
+                <li class="nav_item me-4 align-middle"><a target="_blank" href="https://www.tiktok.com/es"><img src="Recursos/logo tiktok2.png" alt="Boton para Tik Tok"></a></li>
+                <li class="nav_item  align-middle"><a target="_blank" href="https://www.facebook.com"><img src="Recursos/facebook logo.png" alt="Boton para Facebook"></a></li>
             </ul>
         </nav>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
