@@ -12,103 +12,149 @@
     <meta name="description" content="Siguiendo Huellas es un proyecto que busca centralizar la búsqueda de todos nuestros amiguitos peludos en un solo lugar. Con la mejor de las ondas y con mucha buena voluntad!">
     <meta name="keywords" content="Perros, Gatos, Mascotas, Animales, Perdidos, Peludos, Refugios, Formulario, Encontre, Aviso, Publicar">
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css/bootstrap.css">
 </head>
 
-<body class="bg-beige">
-    <header class="row container align-items-start">
-        <img src="Recursos\Logo ps ajustado.png" alt="Logo" class="flex-nowrap col-xs-none col-sm-1 col-md-2 col-lg-1">
-        <h1 class="text-nowrap col-md-5 col-sm-5 col-lg-5" style="font-family: 'Style Script', cursive; font-size: 350%;"><a href="index.html">Siguiendo Huellas</a> <a href="index.html"><img src="recursos/patitas-camino.gif" alt="" class="flex-nowrap col-xs-none col-sm-1 col-md col-lg-1 col" id="GifPatitas"></a> </h1>
-        <nav class="flex-nowrap col-md">
-            <ul class="nav nav-tabs flex-nowrap justify-content-between">
-                <li class="nav-item"><a class="nav-link text-center" href="RegistrarRefugio.html">Registrar Refugio</a></li>
-                <li class="nav-item"><a class="nav-link text-center" href="EncontreUnaMascota.html">Encontré una mascota</a></li>
-                <li class="nav-item"><a class="nav-link text-center" href="PerdiMiMascota.html">Perdí mi mascota</a></li>
+<body class="bg-fondo" style="overflow-x: hidden;">
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-headeryfooter" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <img src="Recursos\Logo ps ajustado.png" alt="Logo" class="img-fluid col-xs-none">
+            <a class="navbar-brand" href="index.html" style="font-family: 'Style Script', cursive; font-size: 350%;">Siguiendo Huellas</a>
+            <img src="recursos/patitas-camino.gif" class="flex-nowrap">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item btn btn-sm btn-outline-secondary ms-5 mt-2">
+                <a class="nav-link active" aria-current="page" href="RegistrarRefugio.html">Registrar Refugio</a>
+                </li>
+
+                <li class="nav-item btn btn-sm btn-outline-secondary ms-5 mt-2">
+                <a class="nav-link active" aria-current="page" href="EncontreUnaMascota.html">Encontré una mascota</a>
+                </li>
+
+                <li class="nav-item btn btn-sm btn-outline-secondary ms-5 mt-2">
+                <a class="nav-link active" aria-current="page" href="PerdiMiMascota.html">Perdí mi mascota</a>
+                </li>
             </ul>
+
+            <form class="me-5">
+                <input class="form-control ms-5 mt-3" type="text" placeholder="Busqueda por nombre" aria-label="Busqueda por nombre">
+            </form>
+            </div>
+        </div>
         </nav>
     </header>
 
     
 
-    <div class="row">
-        <div class="col-xl-6 col-md-6">
-            <h1>Inscripción de mascota encontrada</h1>
-            <p class="">En éste formulario, usted podrá inscribir una mascota que halla encontrado. Tenga en cuenta que las personas que soliciten contactarse podrán ver su número de teléfono para contactarse con usted.</p>
-            <form action="" method="POST" enctype="text/plain">
-                <fieldset>
-                    <legend>Información de Contacto.</legend>
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text"name="Nombre">
-                    <label for="Apellido">Apellido:</label>
-                    <input type="text"name="Apellido" class="mb-2">
-                    <br>
-                    <label for="Numero_De_Contacto">Número de telefono:</label>
-                    <input type="text"name="Numero_De_Contacto">
-                </fieldset>
-                <fieldset>
-                    <legend>Información de la mascota</legend>
-                    <label for="Zona_Encontrado" class="mb-2">Zona en la que lo encontró: </label>
-                    <input type="text"name="UbicacionDelRefugio">
-                    <br>
-                    <label for="color_animal">Color del Animal:</label>
-                    <input type="text"name="color_animal">
-                    <br>
-                    <label for="archivos_encontrada" class="mb-2">Cargue aquí fotos y/o videos del animal que encontró </label>
-                    <input type="Submit" value="Cargar Archivos" class="btn btn-outline-info"> </p>
-                    <br>
-                    <div class="form-floating">
-                        <textarea class="form-control border border-warning" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Escriba aquí cualquier dato que crea relevante.</label>
-                    </div>
-                </fieldset>
-                <input type="submit" value="Publicar mascota" class="btn btn-outline-primary">
-            </form>
-        </div>
-        
-
-        <aside class="col-sm-12 col-md-8 col-lg-5 col-xl-4 border border-2 border-primary me-auto align-items-center">
-            <div class="">
-            <h2>Mascotas perdidas</h2>
-            <form action="">
-                <label for="filtros">Filtrar:</label>
-                <select name="Filtros">
-                    <option value="Razas">Por Raza</option>
-                    <option value="Ubicacion">Por Ubicación</option>
-                </select>
-            </form>
-            <article>
-                <img src="recursos/_107435681_perro1.jpg" alt="Foto de animal perdido" class="img-fluid img-thumbnail">
-                <p>Nombre del animal</p>
-                <p>Descripción de la mascota:</p>
-                <p>Zona donde se perdió:</p>
-            </article>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7804.817079831111!2d-58.72325486997277!3d-34.666789142156695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1628281277639!5m2!1ses-419!2sar" class="img-fluid img-thumbnail" allowfullscreen="" loading="lazy"> </iframe>
+    <div class="bg-sections-sub">
+        <div class="row ms-3">
+            <div class="col-xl-6 col-md-6">
+                <h1>Inscripción de mascota encontrada</h1>
+                <p class="">En éste formulario, usted podrá inscribir una mascota que halla encontrado. Tenga en cuenta que las personas que soliciten contactarse podrán ver su número de teléfono para contactarse con usted.</p>
+                <form action="" method="POST" enctype="text/plain">
+                    <fieldset>
+                        <legend>Información de Contacto.</legend>
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text"name="Nombre">
+                        <label for="Apellido">Apellido:</label>
+                        <input type="text"name="Apellido" class="mb-2">
+                        <br>
+                        <label for="Numero_De_Contacto">Número de telefono:</label>
+                        <input type="text"name="Numero_De_Contacto">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información de la mascota</legend>
+                        <label for="Zona_Encontrado" class="mb-2">Zona en la que lo encontró: </label>
+                        <input type="text"name="UbicacionDelRefugio">
+                        <br>
+                        <label for="color_animal">Color del Animal:</label>
+                        <input type="text"name="color_animal">
+                        <br>
+                        <label for="archivos_encontrada" class="mb-2">Cargue aquí fotos y/o videos del animal que encontró </label>
+                        <input type="Submit" value="Cargar Archivos" class="btn btn-secondary"> </p>
+                        <br>
+                        <div class="form-floating">
+                            <textarea class="form-control border border-warning" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Escriba aquí cualquier dato que crea relevante.</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Publicar mascota" class="btn btn-primary">
+                </form>
             </div>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Contactar2" aria-expanded="false" aria-controls="Contactar2">Contactar</button>
-            <div style="min-height: 10px;">
-                <div class="collapse collapse-horizontal" id="Contactar2">
-                    <div class="card card-body" style="width: 25rem;">
-                    Recuerde que ponerse en contacto es una responsabilidad. Si usted está segur@ de que se quiere poner en contacto, presione el botono de abajo.
-                    <input type="submit" value="Contactar!" class="btn btn-outline-success">
+        
+            <aside class="col-sm-12 col-md-8 col-lg-5 col-xl-4 ms-5 justify-content-end module me-auto align-items-center mt-3">
+                <div class="">
+                <h2>Mascotas perdidas</h2>
+                <form action="">
+                    <label for="filtros">Filtrar:</label>
+                    <select name="Filtros">
+                        <option value="Razas">Por Raza</option>
+                        <option value="Ubicacion">Por Ubicación</option>
+                    </select>
+                </form>
+                <article>
+                    <img src="recursos/_107435681_perro1.jpg" alt="Foto de animal perdido" class="img-fluid img-thumbnail">
+                    <p>Nombre del animal</p>
+                    <p>Descripción de la mascota:</p>
+                    <p>Zona donde se perdió:</p>
+                </article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7804.817079831111!2d-58.72325486997277!3d-34.666789142156695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1628281277639!5m2!1ses-419!2sar" class="img-fluid img-thumbnail" allowfullscreen="" loading="lazy"> </iframe>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Contactar2" aria-expanded="false" aria-controls="Contactar2">Contactar</button>
+                <div style="min-height: 10px;">
+                    <div class="collapse collapse-horizontal" id="Contactar2">
+                        <div class="card card-body" style="width: 25rem;">
+                        Recuerde que ponerse en contacto es una responsabilidad. Si usted está segur@ de que se quiere poner en contacto, presione el botono de abajo.
+                        <input type="submit" value="Contactar!" class="btn btn-outline-success">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </aside>
-    </div>  
-
-    <footer>
-        <hr>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="FAQ-SH.html">FAQ</a></li>
-                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="Contacto-SH.html">Contacto</a></li>
-                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="PoliticasDelSitio-SH.html">Políticas del sitio</a></li>
-                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="TerminosYCondiciones-SH.html">Términos y condiciones</a></li>
-                <li class="nav_item me-4"><a class="nav-link px-2 text-muted" href="Contribuir-Donar.html">Contribuir</a></li>
-                <li class="nav_item me-4 align-middle"><a target="_blank" href="https://www.instagram.com/lautygazzo/"><img src="recursos/IgLogo.png" alt="Enlace a instagram" ></a></li>
-                <li class="nav_item me-4 align-middle"><a target="_blank" href="https://www.tiktok.com/es"><img src="Recursos/logo tiktok2.png" alt="Enlace a Tik Tok"></a></li>
-                <li class="nav_item  align-middle"><a target="_blank" href="https://www.facebook.com"><img src="Recursos/facebook logo.png" alt="Enlace a Facebook"></a></li>
-            </ul>
-        </nav>
-    </footer>
+            </aside>
+        </div>
+        <footer class="row mt-5">
+            <nav class="navbar fixed-bottom navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><Bottom navbar></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  justify-content-center" id="navbarCollapse">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="FAQ-SH.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Contacto-SH.html">Contactanos!</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="PoliticasDelSitio-SH.html">Politicas del Sitio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="TerminosYCondiciones-SH.html">Términos y Condiciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Contribuir-Donar.html">Contribuye a la página</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.instagram.com/lautygazzo/"><img src="recursos/IgLogo.png" alt="Enlace a instagram" ></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.tiktok.com/es"><img src="Recursos/logo tiktok2.png" alt="Enlace a Tik Tok"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.facebook.com"><img src="Recursos/facebook logo.png" alt="Enlace a Facebook"></a></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

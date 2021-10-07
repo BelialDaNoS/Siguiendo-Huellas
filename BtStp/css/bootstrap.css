@@ -13,8 +13,26 @@
   
 }
 
+
+.module {
+  max-width: 250px;
+  padding: 1rem;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
 .bg-sections{
   background-color: rgb(255, 255, 255,0.6);
+}
+
+.bg-sections-sub{
+  background-color: rgb(255, 255, 255,0.4);
 }
 
 .bg-headeryfooter{
